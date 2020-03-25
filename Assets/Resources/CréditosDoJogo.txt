@@ -1,0 +1,39 @@
+Jogo de Tiro ao Alvo
+
+Criado por 'seu nome'
+
+--- -- ---
+
+Efeitos Sonoros Utilizados
+
+Som de Tiro by MATTIX (https://freesound.org/people/MATTIX/)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+
+--- -- ---
+
+Fontes Utilizadas
+
+Upheaval
+
+--- -- ---
+
+Gráficos Utilizados
+
+Shooting Gallery by Kenney - https://kenney.nl/
+
+--- -- ---
+
+Músicas Utilizadas
+
+Meatball Parade Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+
+Merry Go Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+
+--- -- ---
+
+Esse jogo foi feito em 'X' dias!
