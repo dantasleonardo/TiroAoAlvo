@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_VelocidadePato: 1.5
+  m_TempoDestruicao: 20
 --- !u!1 &3033739821823115801
 GameObject:
   m_ObjectHideFlags: 0

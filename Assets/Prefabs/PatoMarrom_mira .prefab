@@ -248,3 +248,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_VelocidadePato: 2
+  m_TempoDestruicao: 20
