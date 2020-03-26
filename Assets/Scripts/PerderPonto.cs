@@ -9,5 +9,4 @@ public class PerderPonto : MonoBehaviour
         FindObjectOfType<GameManager>().RetirarPonto();
         Destroy(this.gameObject);
     }
-
 }

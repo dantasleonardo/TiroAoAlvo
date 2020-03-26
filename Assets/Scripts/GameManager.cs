@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int m_pontuacaoAtual;
+    public int m_PontuacaoAtual;
     public Text m_Pontuacao; 
 
     public void AdicionarPonto()
     {
-        m_pontuacaoAtual += 1;
-        m_Pontuacao.text = "Pontuação: " + m_pontuacaoAtual;
+        m_PontuacaoAtual += 1;
+        m_Pontuacao.text = "Pontuação: " + m_PontuacaoAtual;
     }
 
     public void RetirarPonto()
     {
-        m_pontuacaoAtual -= 1;
-        m_Pontuacao.text = "Pontuação: " + m_pontuacaoAtual;
+        m_PontuacaoAtual -= 1;
+        m_Pontuacao.text = "Pontuação: " + m_PontuacaoAtual;
     }
 
     void Start()
