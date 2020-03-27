@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public float m_TempoAtual;
     public Text m_TextoTempo;
 
+    public GameObject GameOver;
+
     public void AdicionarPonto()
     {
         m_PontuacaoAtual += 1;
@@ -38,5 +40,13 @@ public class GameManager : MonoBehaviour
     {
         m_TempoAtual -= Time.deltaTime;
         AtualizarTempo();
+
+        if(m_TempoAtual <= 0)
+        {
+            m_TextoTempo.text = "0";
+            Cursor.visible = true;
+            GameOver.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
 }
