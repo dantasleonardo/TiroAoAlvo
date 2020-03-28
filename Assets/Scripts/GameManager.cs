@@ -43,6 +43,11 @@ public class GameManager : MonoBehaviour
 
         if(m_TempoAtual <= 0)
         {
+            if(m_PontuacaoAtual > PlayerPrefs.GetInt("HighScore"))
+            {
+                PlayerPrefs.SetInt("HighScore", m_PontuacaoAtual);
+            }
+
             m_TextoTempo.text = "0";
             Cursor.visible = true;
             GameOver.SetActive(true);
