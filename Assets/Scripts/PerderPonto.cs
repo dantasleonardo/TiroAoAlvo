@@ -6,7 +6,10 @@ public class PerderPonto : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        FindObjectOfType<GameManager>().RetirarPonto();
-        Destroy(this.gameObject);
+        if (FindObjectOfType<GameManager>().m_ContinuarJogando == true)
+        {
+            FindObjectOfType<GameManager>().RetirarPonto();
+            Destroy(this.gameObject);
+        }
     }
 }

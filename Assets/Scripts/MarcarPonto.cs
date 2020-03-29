@@ -6,7 +6,10 @@ public class MarcarPonto : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        FindObjectOfType<GameManager>().AdicionarPonto();
-        Destroy(this.gameObject);
+        if (FindObjectOfType<GameManager>().m_ContinuarJogando == true)
+        {
+            FindObjectOfType<GameManager>().AdicionarPonto();
+            Destroy(this.gameObject);
+        }
     }
 }

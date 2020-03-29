@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     public bool m_Pause;
     public GameObject Pause;
 
+    //Variavel para definir quando pode continuar marcando pontos
+    public bool m_ContinuarJogando;
+
     public void AdicionarPonto()
     {
         m_PontuacaoAtual += 1;
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0f;
             Cursor.visible = true;
             Pause.SetActive(true);
+            m_ContinuarJogando = false;
         }
         else
         {
@@ -49,11 +53,14 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             Cursor.visible = false;
             Pause.SetActive(false);
+            m_ContinuarJogando = true;
         }
     }
 
     private void Start()
     {
+        m_ContinuarJogando = true;
+        //Time.timeScale = 1f;
         m_TempoAtual = m_TempoMax;
     }
 
@@ -78,6 +85,7 @@ public class GameManager : MonoBehaviour
             Cursor.visible = true;
             GameOver.SetActive(true);
             Time.timeScale = 0f;
+            m_ContinuarJogando = false;
         }
     }
 }
