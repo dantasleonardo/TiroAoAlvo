@@ -1,30 +1,19 @@
-Jogo de Tiro ao Alvo
+t:Game Designer
+Leonardo Dantas
 
-Criado por 'seu nome'
+t:Programador
+Leonardo Dantas
 
---- -- ---
+t:Arte
+Shooting Gallery by Kenney - https://kenney.nl/
 
-Efeitos Sonoros Utilizados
+t:Fonte
+Upheaval
 
+t:Músicas e SFX
 Som de Tiro by MATTIX (https://freesound.org/people/MATTIX/)
 Licensed under Creative Commons: By Attribution 3.0 License
 http://creativecommons.org/licenses/by/3.0/
-
---- -- ---
-
-Fontes Utilizadas
-
-Upheaval
-
---- -- ---
-
-Gráficos Utilizados
-
-Shooting Gallery by Kenney - https://kenney.nl/
-
---- -- ---
-
-Músicas Utilizadas
 
 Meatball Parade Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 3.0 License
@@ -34,6 +23,3 @@ Merry Go Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 3.0 License
 http://creativecommons.org/licenses/by/3.0/
 
---- -- ---
-
-Esse jogo foi feito em 'X' dias!
