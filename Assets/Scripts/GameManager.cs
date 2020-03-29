@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject GameOver;
 
+    public bool m_Pause;
+    public GameObject Pause;
+
     public void AdicionarPonto()
     {
         m_PontuacaoAtual += 1;
@@ -31,6 +34,24 @@ public class GameManager : MonoBehaviour
         m_TextoTempo.text = Mathf.FloorToInt(m_TempoAtual).ToString();
     }
 
+    public void Pausar()
+    {
+        if(m_Pause == false)
+        {
+            m_Pause = true;
+            Time.timeScale = 0f;
+            Cursor.visible = true;
+            Pause.SetActive(true);
+        }
+        else
+        {
+            m_Pause = false;
+            Time.timeScale = 1f;
+            Cursor.visible = false;
+            Pause.SetActive(false);
+        }
+    }
+
     private void Start()
     {
         m_TempoAtual = m_TempoMax;
@@ -38,6 +59,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pausar();
+        }
+
         m_TempoAtual -= Time.deltaTime;
         AtualizarTempo();
 
