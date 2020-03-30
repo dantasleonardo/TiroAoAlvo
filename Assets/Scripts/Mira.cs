@@ -9,9 +9,10 @@ public class Mira : MonoBehaviour
     public AudioSource m_SomTiro;
 
     //todo o código está alocado no GameObject da mira
+
     private void SomTiro()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             m_SomTiro.Play();
         }
@@ -27,6 +28,13 @@ public class Mira : MonoBehaviour
         m_Mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(m_Mouse.x, m_Mouse.y, transform.position.z);
         m_Arma.transform.position = new Vector3(m_Mouse.x + 2, m_Arma.transform.position.y, transform.position.z);
+
+        if(transform.position.x <= -8.5f || transform.position.x >= 8.2f)
+        {
+            float xPos = Mathf.Clamp(transform.position.x, -8.5f, 8.2f);
+            transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+            m_Arma.transform.position = new Vector3(xPos, m_Arma.transform.position.y, transform.position.z);
+        }
 
         SomTiro();
     }

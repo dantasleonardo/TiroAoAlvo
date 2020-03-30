@@ -40,6 +40,7 @@ public class Creditos : MonoBehaviour
 
     private void Update()
     {
+        Time.timeScale = 1f;
         transform.Translate(Vector3.up * m_Speed * Time.deltaTime);
     }
 }

@@ -863,7 +863,7 @@ MonoBehaviour:
   m_RoleSize: 50
   m_PersonSize: 40
   m_Space: 40
-  m_Speed: 50
+  m_Speed: 80
   m_Canvas: {fileID: 1822189749}
 --- !u!114 &1830722239
 MonoBehaviour:
