@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         m_ContinuarJogando = true;
-        //Time.timeScale = 1f;
+        Time.timeScale = 1f;
         m_TempoAtual = m_TempoMax;
     }
 
