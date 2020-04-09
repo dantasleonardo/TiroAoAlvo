@@ -11,7 +11,8 @@ Browser
 
 # Ferramentas
 Unity 2019.3.0f6
-Visual Studio
+
+Visual Studio 2017 (C#)
 
 # Resultado
 Link para jogar/baixar: https://leodantas.itch.io/duckshot
